@@ -1,0 +1,92 @@
+.wrapper{
+  height: 100%;
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+
+.menuItem{
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  margin: 10px;
+  padding: 2px;
+  text-align: center;
+}
+
+.navWrapper{
+  align-items: center;    
+  display: flex;
+  background: rgba(0,0,0,0.15);
+  margin: 20px;
+  padding-left: 40px;
+  border-radius: 0px;
+  color: #222222;
+}
+
+.contentWrapper{
+  height: 300px;
+  background: rgba(0,0,0,0.05);
+  margin: 20px;
+  padding: 20px;
+}
+
+.iconWrapper{
+  display: flex;  
+  position: absolute;
+  right: 20px;  
+}
+
+.filterWrapper{  
+  background: #ffffff;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+  margin-top: -15px;
+  height: auto;
+  padding: 20px 20px 60px 10px;
+}
+
+.inputField{
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.formItem{
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.textItem{
+  margin-bottom: -15px;
+  font-size: 13px;
+}
+
+.buttonItem{
+  border: 0;
+  border-radius: 0;
+  color: rgba(0,0,0,0.7);
+  position: absolute;
+  right: 60px;
+}
+
+@media only screen and (min-width:481px){
+  .iconWrapper{
+    display: none;
+  }  
+}
+
+@media only screen and (max-width:480px){
+  .container{
+    display: none;
+  }
+  .searchContainer{
+    display: block;    
+    width: 100%;
+    margin-top:-10px; 
+  }
+  .input-group-mobile{
+    display: block;
+  }
+}
